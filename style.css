@@ -1,0 +1,42 @@
+body {
+  background-color: #212121;
+}
+
+.score, .seconds-left, h1{
+  display: flex;
+  justify-content: center;
+
+}
+
+h1, h2 {
+  color: #ffff;
+  margin: 1.5rem .3rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.grid {
+  background-color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
+
+.mole {
+  background-image: url('mole.jpg');
+  background-size: cover;
+}
+@media (max-width: 450px) {
+  h1, h2 {
+    margin: .5rem;
+  }
+}
